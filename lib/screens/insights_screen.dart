@@ -136,10 +136,10 @@ class _InsightsScreenState extends State<InsightsScreen>
     return AnimatedBuilder(
       animation: animation,
       builder: (context, child) {
-        return Transform.scale(
-          scale: animation.value,
-          child: Opacity(
-            opacity: animation.value,
+        return FadeTransition(
+          opacity: animation,
+          child: ScaleTransition(
+            scale: animation,
             child: Container(
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
@@ -235,10 +235,10 @@ class _InsightsScreenState extends State<InsightsScreen>
     return AnimatedBuilder(
       animation: _cardAnimations[3],
       builder: (context, child) {
-        return Transform.scale(
-          scale: _cardAnimations[3].value,
-          child: Opacity(
-            opacity: _cardAnimations[3].value,
+        return FadeTransition(
+          opacity: _cardAnimations[3],
+          child: ScaleTransition(
+            scale: _cardAnimations[3],
             child: Container(
               margin: const EdgeInsets.only(top: 16),
               padding: const EdgeInsets.all(20),
@@ -404,7 +404,6 @@ class _InsightsScreenState extends State<InsightsScreen>
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   _buildPeriodSelector(),
-
                   GridView.count(
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
@@ -445,7 +444,6 @@ class _InsightsScreenState extends State<InsightsScreen>
                       ),
                     ],
                   ),
-
                   _buildMoodDistributionChart(),
                 ],
               ),
