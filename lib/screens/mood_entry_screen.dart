@@ -171,9 +171,9 @@ class _MoodEntryScreenState extends State<MoodEntryScreen>
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
-            crossAxisSpacing: 12,
-            mainAxisSpacing: 12,
+            crossAxisCount: 4,
+            crossAxisSpacing: 8,
+            mainAxisSpacing: 8,
             childAspectRatio: 1,
           ),
           itemCount: widget.moodEmojis.length,

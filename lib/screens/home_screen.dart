@@ -23,14 +23,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     'Happy': '😊',
     'Sad': '😢',
     'Angry': '😠',
-    'Excited': '🤩',
-    'Calm': '😌',
-    'Anxious': '😰',
-    'Stressed': '😫',
-    'Grateful': '🙏',
-    'Joyful': '😄',
-    'Content': '😊',
-    'Tired': '😴',
     'Neutral': '😐',
   };
 
@@ -38,14 +30,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     'Happy': Colors.amber.shade100,
     'Sad': Colors.blue.shade100,
     'Angry': Colors.red.shade100,
-    'Excited': Colors.orange.shade100,
-    'Calm': Colors.green.shade100,
-    'Anxious': Colors.purple.shade100,
-    'Stressed': Colors.deepOrange.shade100,
-    'Grateful': Colors.teal.shade100,
-    'Joyful': Colors.yellow.shade100,
-    'Content': Colors.lightGreen.shade100,
-    'Tired': Colors.grey.shade200,
     'Neutral': Colors.blueGrey.shade100,
   };
 
