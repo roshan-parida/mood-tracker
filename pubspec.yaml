@@ -98,9 +98,4 @@ flutter_launcher_icons:
     ios: true
     image_path: "assets/mood_tracker_icon.png"
     min_sdk_android: 21
-
-    # Optional: Adaptive icons for Android
-    adaptive_icon_background: "#6366F1"
-
-    # Optional: Remove old launchers
     remove_alpha_ios: true
