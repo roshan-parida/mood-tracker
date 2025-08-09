@@ -11,7 +11,7 @@ class MoodEntry {
     return {
       'mood': mood,
       'note': note,
-      'timestamp': timestamp.toIso8601String(),
+      'timestamp': Timestamp.fromDate(timestamp),
     };
   }
 
